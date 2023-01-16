@@ -1,6 +1,3 @@
-nix-shell
+cargo build --release
 
-rustc src/main.rs -o /tmp/dot && /tmp/dot | dot -Tx11
-
-cargo run
-./target/debug/lb4 | dot -Tx11
+./target/release/lb4
